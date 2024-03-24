@@ -61,7 +61,7 @@ function Form() {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">Contact Us</h2>
+      <h2 className="mb-4">Message Me</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="mb-3">
           <input
