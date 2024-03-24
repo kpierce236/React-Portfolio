@@ -12,7 +12,7 @@ function Footer() {
         </ul>
       </div>
       <div className="text-center p-3 bg-dark text-white">
-        &copy; 2024 Your Company
+        &copy; 2024 Kevin Pierce
       </div>
     </footer>
   );
