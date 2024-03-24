@@ -2,14 +2,14 @@ import React from 'react';
 import html2pdf from 'html2pdf.js';
 
 var opt = {
-  margin: 1,
+  margin: [20,0,1,0],
   filename: 'Kevin_Pierce_Resume.pdf',
 }
 
 function Resume() {
   const downloadResume = () => {
     const element = document.getElementById('resume-content');
-    html2pdf.from(element).set(opt);
+    html2pdf(element,opt);
   };
 
   return (
@@ -17,7 +17,7 @@ function Resume() {
       <div className="row">
         <div className="col-md-6">
           <h2>Resume</h2>
-          <p>Download your resume:</p>
+          <p>Download my resume:</p>
           <button onClick={downloadResume} className="btn btn-primary">Download PDF</button>
         </div>
       </div>
