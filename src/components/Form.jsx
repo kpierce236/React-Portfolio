@@ -56,38 +56,47 @@ function Form() {
     setName('');
     setMessage('');
     setEmail('');
+    setErrorMessage('');
   };
 
   return (
-    <div className="container text-center">
-      <h1>Contact</h1>
-      <form className="form" onSubmit={handleFormSubmit}>
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="John Doe"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <textarea
-          value={password}
-          name="message"
-          onChange={handleInputChange}
-          placeholder="Write your message..."
-        />
-        <button type="submit">Submit</button>
+    <div className="container mt-5">
+      <h2 className="mb-4">Contact Us</h2>
+      <form onSubmit={handleFormSubmit}>
+        <div className="mb-3">
+          <input
+            className="form-control"
+            type="text"
+            name="name"
+            value={name}
+            onChange={handleInputChange}
+            placeholder="Your Name"
+          />
+        </div>
+        <div className="mb-3">
+          <input
+            className="form-control"
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleInputChange}
+            placeholder="Your Email"
+          />
+        </div>
+        <div className="mb-3">
+          <textarea
+            className="form-control"
+            name="message"
+            value={message}
+            onChange={handleInputChange}
+            placeholder="Your Message"
+            rows="4"
+          ></textarea>
+        </div>
+        <button className="btn btn-primary" type="submit">Submit</button>
       </form>
       {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
+        <div className="alert alert-danger mt-3">{errorMessage}</div>
       )}
     </div>
   );
