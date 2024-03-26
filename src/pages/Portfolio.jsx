@@ -8,44 +8,48 @@ function Portfolio() {
       title: "Note Taker App",
       deployedLink: "https://note-taker-kp-aa6665bda0a7.herokuapp.com/",
       githubLink: "https://github.com/kpierce236/Note-Taker",
-      imageUrl: "https://github.com/kpierce236/Note-Taker/raw/main/videos/Note-Taker-Gif.gif" // Example image URL
+      imageUrl: "https://github.com/kpierce236/Note-Taker/raw/main/videos/Note-Taker-Gif.gif",
+      appType: "Node.js and Express"
     },
     {
-      title: "Project 2",
-      deployedLink: "https://example.com/project2",
+      title: "Tech Blog",
+      deployedLink: "https://tech-blog-kp-dc469c536e9a.herokuapp.com/",
       githubLink: "https://github.com/your-username/project2",
-      imageUrl: "https://via.placeholder.com/300" // Example image URL
+      imageUrl: "https://via.placeholder.com/300",
+      appType: "MVC (Node.js, mySQL, Express, HandleBars) " 
     },
     {
-      title: "Project 3",
+      title: "Book Search Engine",
       deployedLink: "https://example.com/project2",
-      githubLink: "https://github.com/your-username/project2",
-      imageUrl: "https://via.placeholder.com/300" // Example image URL
+      githubLink: "https://github.com/kpierce236/Book-Search-Engine",
+      imageUrl: "https://via.placeholder.com/300",
+      appType: "MERN Stack" 
     },
     {
-      title: "Project 4",
-      deployedLink: "https://example.com/project2",
-      githubLink: "https://github.com/your-username/project2",
-      imageUrl: "https://via.placeholder.com/300" // Example image URL
+      title: "Weather Dashboard",
+      deployedLink: "https://kpierce236.github.io/Weather-Dashboard/",
+      githubLink: "https://github.com/kpierce236/Weather-Dashboard",
+      imageUrl: "https://github.com/kpierce236/Weather-Dashboard/raw/main/images/screenshot.png",
+      appType: "Server Side APIs" 
     },
     {
-      title: "Project 5",
-      deployedLink: "https://example.com/project2",
-      githubLink: "https://github.com/your-username/project2",
-      imageUrl: "https://via.placeholder.com/300" // Example image URL
+      title: "Scheduler App",
+      deployedLink: "https://kpierce236.github.io/Work-Day-Scheduler/",
+      githubLink: "https://github.com/kpierce236/Work-Day-Scheduler",
+      imageUrl: "https://github.com/kpierce236/Work-Day-Scheduler/raw/main/images/screenshot.png"
     },
     {
-      title: "Project 6",
-      deployedLink: "https://example.com/project2",
-      githubLink: "https://github.com/your-username/project2",
-      imageUrl: "https://via.placeholder.com/300" // Example image URL
+      title: "Code Quiz",
+      deployedLink: "https://kpierce236.github.io/Code-Quiz/",
+      githubLink: "https://github.com/kpierce236/Code-Quiz",
+      imageUrl: "https://github.com/kpierce236/Code-Quiz/raw/main/images/screenshot.png" 
     }
-    // Add more projects as needed
+
   ];
 
   return (
     <div className="container mt-4">
-      <h2 className="mb-4">Portfolio Page</h2>
+      <h2 className="mb-4">Portfolio</h2>
       <div className="row">
         {/* Map through projects array and render ProjectCard component for each project */}
         {projects.map((project, index) => (
@@ -55,6 +59,7 @@ function Portfolio() {
               deployedLink={project.deployedLink}
               githubLink={project.githubLink}
               imageUrl={project.imageUrl}
+              appType={project.appType}
             />
           </div>
         ))}
