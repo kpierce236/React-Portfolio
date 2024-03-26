@@ -46,20 +46,22 @@ const overlayHoverStyles = {
 const titleHoverStyles = {
     color: '#ffcc00', // Highlighted color when hovered
   };
-  
+
 const titleLinkStyles = {
   color: '#fff',
   textDecoration: 'none',
   fontSize: '24px', // Larger title font size
+  marginBottom: '50px', // Add space below the title
 };
 
 const githubIconStyles = {
   fontSize: '32px', // Larger icon font size
   marginLeft: '10px', // Add space between title and icon
+  marginBottom: '50px', // Add space below the icon
 };
 
 const appTypeStyles = {
-  fontSize: '14px',
+  fontSize: '15px',
 };
 
 function ProjectCard({ title, deployedLink, githubLink, imageUrl, appType }) {
