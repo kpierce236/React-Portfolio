@@ -39,15 +39,18 @@ const overlayStyles = {
   transition: 'opacity 0.3s ease',
 };
 
-const overlayVisibleStyles = {
+const overlayHoverStyles = {
   opacity: '1', // Show overlay on hover
 };
 
+const titleHoverStyles = {
+    color: '#ffcc00', // Highlighted color when hovered
+  };
+  
 const titleLinkStyles = {
   color: '#fff',
   textDecoration: 'none',
-  fontSize: '24px', // Larger title font size,
-   transition: 'color 0.3s ease', // Smooth transition for color change
+  fontSize: '24px', // Larger title font size
 };
 
 const githubIconStyles = {
@@ -60,16 +63,17 @@ const appTypeStyles = {
 };
 
 function ProjectCard({ title, deployedLink, githubLink, imageUrl, appType }) {
-  const [isHovered, setIsHovered] = React.useState(false);
+  const [isOverlayHovered, setIsOverlayHovered] = React.useState(false);
+  const [isTitleHovered, setIsTitleHovered] = React.useState(false);
 
   return (
-    <div className="project-card" style={cardStyles} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+    <div className="project-card" style={cardStyles} onMouseEnter={() => setIsOverlayHovered(true)} onMouseLeave={() => setIsOverlayHovered(false)}>
       <div className="snapshot" style={snapshotStyles}>
         <img src={imageUrl} alt={title} style={imageStyles} />
       </div>
-      <div className="overlay" style={{ ...overlayStyles, ...(isHovered && overlayVisibleStyles) }}>
+      <div className="overlay" style={{ ...overlayStyles, ...(isOverlayHovered && overlayHoverStyles) }}>
         <h5 className="card-title">
-          <a href={deployedLink} style={{ ...titleLinkStyles, color: isHovered ? '#ffcc00' : '#fff' }}>{title}</a>
+          <a href={deployedLink} style={{ ...titleLinkStyles, ...(isTitleHovered && titleHoverStyles) }} onMouseEnter={() => setIsTitleHovered(true)} onMouseLeave={() => setIsTitleHovered(false)}>{title}</a>
           <a href={githubLink}><i className="fab fa-github" style={githubIconStyles}></i></a>
         </h5>
         <p className="app-type" style={appTypeStyles}>{appType}</p>
