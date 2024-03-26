@@ -13,7 +13,7 @@ function Resume() {
   };
 
   return (
-    <div className="container">
+    <div className="container mt-4 mb-5">
       <div className="row">
         <div className="col-md-6">
           <h2>Resume</h2>

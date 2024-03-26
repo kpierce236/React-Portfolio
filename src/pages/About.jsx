@@ -3,7 +3,7 @@ import profilePic from '../assets/kp.jpeg'; // Import your profile picture
 
 function About() {
   return (
-    <div className="container">
+    <div className="container mt-4 mb-4">
       <div className="row">
         <div className="col-md-8 offset-md-2">
           <div className="text-center mb-4">
