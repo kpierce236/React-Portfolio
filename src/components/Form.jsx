@@ -10,6 +10,7 @@ function Form() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [goodMessage, setGoodMessage] = useState('');
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -51,12 +52,21 @@ function Form() {
         );
         return;
       }
+    
+   
 
+    
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
     setMessage('');
     setEmail('');
     setErrorMessage('');
+    setGoodMessage("Success: Message Sent");
+
+    setTimeout(() => {
+      setGoodMessage('');
+    }, 1000);
+
   };
 
   return (
@@ -97,6 +107,9 @@ function Form() {
       </form>
       {errorMessage && (
         <div className="alert alert-danger mt-3">{errorMessage}</div>
+      )}
+      {goodMessage && (
+        <div className="alert alert-success mt-3">{goodMessage}</div>
       )}
     </div>
   );
