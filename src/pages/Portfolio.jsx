@@ -14,7 +14,7 @@ function Portfolio() {
     {
       title: "Tech Blog",
       deployedLink: "https://tech-blog-kp-dc469c536e9a.herokuapp.com/",
-      githubLink: "https://github.com/your-username/project2",
+      githubLink: "https://github.com/kpierce236/Tech-Blog",
       imageUrl: "https://via.placeholder.com/300",
       appType: "MVC (Node.js, mySQL, Express, HandleBars) " 
     },
