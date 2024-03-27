@@ -20,7 +20,7 @@ function Portfolio() {
     },
     {
       title: "Book Search Engine",
-      deployedLink: "https://example.com/project2",
+      deployedLink: "https://book-search-engine-rjvv.onrender.com/",
       githubLink: "https://github.com/kpierce236/Book-Search-Engine",
       imageUrl: "https://via.placeholder.com/300",
       appType: "MERN Stack" 
@@ -36,13 +36,15 @@ function Portfolio() {
       title: "Scheduler App",
       deployedLink: "https://kpierce236.github.io/Work-Day-Scheduler/",
       githubLink: "https://github.com/kpierce236/Work-Day-Scheduler",
-      imageUrl: "https://github.com/kpierce236/Work-Day-Scheduler/raw/main/images/screenshot.png"
+      imageUrl: "https://github.com/kpierce236/Work-Day-Scheduler/raw/main/images/screenshot.png",
+      appType: "Third Party APIs (Bootstrap, jQuery)"
     },
     {
       title: "Code Quiz",
       deployedLink: "https://kpierce236.github.io/Code-Quiz/",
       githubLink: "https://github.com/kpierce236/Code-Quiz",
-      imageUrl: "https://github.com/kpierce236/Code-Quiz/raw/main/images/screenshot.png" 
+      imageUrl: "https://github.com/kpierce236/Code-Quiz/raw/main/images/screenshot.png",
+      appType: "Web APIs and DOM Manipulation"
     }
 
   ];
