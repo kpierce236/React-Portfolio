@@ -74,8 +74,6 @@ Check out the application functionality in action:
 
 ## Credits
 
-## Credits
-
 ### Documentation
 
 - [React](https://reactjs.org/)
