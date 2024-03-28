@@ -15,14 +15,14 @@ function Portfolio() {
       title: "Tech Blog",
       deployedLink: "https://tech-blog-kp-dc469c536e9a.herokuapp.com/",
       githubLink: "https://github.com/kpierce236/Tech-Blog",
-      imageUrl: "https://via.placeholder.com/300",
+      imageUrl: "https://github.com/kpierce236/Tech-Blog/raw/main/images/demo.gif",
       appType: "MVC (Node.js, mySQL, Express, HandleBars) " 
     },
     {
       title: "Book Search Engine",
       deployedLink: "https://book-search-engine-rjvv.onrender.com/",
       githubLink: "https://github.com/kpierce236/Book-Search-Engine",
-      imageUrl: "https://via.placeholder.com/300",
+      imageUrl: "https://github.com/kpierce236/Book-Search-Engine/raw/main/images/demo.gif",
       appType: "MERN Stack" 
     },
     {
