@@ -67,9 +67,9 @@ The React Portfolio allows users to:
 
 Check out the application functionality in action: 
 
-*Click the gif to see the full video* and **[HERE](https://kevinpierce.netlify.app/) for deployed app**
+*Click the gif to see the full video* and **[HERE](https://kevinpierce.netlify.app/) for deployed site**
 
-[![Demo of the Application](images/demo.gif)](https://drive.google.com/file/d/1jkxg8xcyCRwB-q9hc2f3zYhfnYz6Xs98/view)
+[![Demo of the Application](images/demo.gif)](https://drive.google.com/file/d/1bzFhYuLtHDB7pou7tesexgeY8lQIZFbw/view)
 
 
 ## Credits
